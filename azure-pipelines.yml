@@ -30,7 +30,7 @@ stages:
     steps:
     - bash: echo QADevOps job1
   - job: QADevOps2
-   steps:
+    steps:
     - bash: echo QADevOps job2
 
 - stage: ProdDevOps
@@ -39,5 +39,5 @@ stages:
     steps:
     - bash: echo ProdDevOps job1
   - job: ProdDevOps2
-   steps:
+    steps:
     - bash: echo ProdDevOps job2
