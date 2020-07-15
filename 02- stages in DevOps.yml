@@ -17,7 +17,7 @@ stages:
 
 - stage: DevDeploy 
   jobs: 
-  - job:DevDeployJob
+  - job: DevDeployJob
     steps: 
     - bash: echo Build FirstJob in Dev
 
