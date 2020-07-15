@@ -14,15 +14,18 @@ stages:
   - job: DevOpsBuild
     steps:
     - bash: echo DevOpsBuild job
+    - bash: echo $(PipelineLevelVariable)
   - job: DevOpsBuild2
     steps:
     - bash: echo DevOpsBuild job2
 
 - stage: DevDevOps
+  variables:
+    environment: DEV
   jobs:
   - job: DevDevOps1
     steps:
-    - bash: echo DevDevOps job1
+    - bash: echo variable in $(environment)
   
 - stage: QADevOps
   jobs:
