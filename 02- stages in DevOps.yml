@@ -26,10 +26,10 @@ stages:
   jobs: 
   - job: QADeployJob
     steps: 
-      - bash: echo Build FirstJob in QA
+    - bash: echo Build FirstJob in QA
 
 - stage: ProdDeploy
-jobs: 
-- job: ProdDeployJob
-steps: 
-- bash: echo Build FirstJob in Prod
+  jobs: 
+  - job: ProdDeployJob
+    steps: 
+    - bash: echo Build FirstJob in Prod
