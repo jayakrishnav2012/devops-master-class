@@ -15,7 +15,7 @@ stages:
     steps:
     - bash: echo DevOpsBuild job
   - job: DevOpsBuild2
-   steps:
+    steps:
     - bash: echo DevOpsBuild job2
 
 - stage: DevDevOps
