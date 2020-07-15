@@ -19,28 +19,28 @@ stages:
     steps:
     - bash: echo DevOpsBuild job2
 
-- stage: DevDevOps
-  variables:
-    environment: DEV
-  jobs:
-  - job: DevDevOps1
-    steps:
-    - bash: echo variable in $(environment)
+# - stage: DevDevOps
+#   variables:
+#     environment: DEV
+#   jobs:
+#   - job: DevDevOps1
+#     steps:
+#     - bash: echo variable in $(environment)
   
-- stage: QADevOps
-  jobs:
-  - job: QADevOps1
-    steps:
-    - bash: echo QADevOps job1
-  - job: QADevOps2
-    steps:
-    - bash: echo QADevOps job2
+# - stage: QADevOps
+#   jobs:
+#   - job: QADevOps1
+#     steps:
+#     - bash: echo QADevOps job1
+#   - job: QADevOps2
+#     steps:
+#     - bash: echo QADevOps job2
 
-- stage: ProdDevOps
-  jobs:
-  - job: ProdDevOps1
-    steps:
-    - bash: echo ProdDevOps job1
-  - job: ProdDevOps2
-    steps:
-    - bash: echo ProdDevOps job2
+# - stage: ProdDevOps
+#   jobs:
+#   - job: ProdDevOps1
+#     steps:
+#     - bash: echo ProdDevOps job1
+#   - job: ProdDevOps2
+#     steps:
+#     - bash: echo ProdDevOps job2
